@@ -84,7 +84,7 @@ func main() {
 	if err != nil {
 		log.Fatal("couldnt create aws Config")
 	}
-
+	
 	s3Client := s3.NewFromConfig(awsConfig)
 
 	cfg := apiConfig{
